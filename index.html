@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gek plâtrerie peinture | Artisan Plâtrier Peintre à Saint-Étienne</title>
+    <meta name="description" content="Artisan de confiance à Saint-Étienne (42000). Gek plâtrerie peinture est spécialisé en travaux de plâtrerie et peinture. Devis gratuit au 06 24 61 77 37.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        display: ['Poppins', 'sans-serif'],
+                    },
+                    colors: {
+                        primary: {
+                            50: '#f0f9ff',
+                            100: '#e0f2fe',
+                            500: '#0ea5e9', // Blue-sky
+                            600: '#0284c7',
+                            800: '#075985',
+                            900: '#0c4a6e', // Slate-blue deep
+                        },
+                        accent: {
+                            500: '#f59e0b', // Amber for CTA
+                            600: '#d97706',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-sans text-slate-800 antialiased bg-slate-50">
+
+    <!-- Header Sticky -->
+    <header class="fixed top-0 w-full bg-white/95 backdrop-blur-md shadow-sm z-50 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo / Nom -->
+                <div class="flex-shrink-0 flex items-center gap-3">
+                    <div class="w-10 h-10 rounded-full bg-primary-800 text-white flex items-center justify-center text-xl shadow-lg">
+                        <i class="fa-solid fa-paint-roller"></i>
+                    </div>
+                    <div>
+                        <h1 class="font-display font-bold text-xl text-slate-900 leading-tight">Gek plâtrerie peinture</h1>
+                        <p class="text-xs text-slate-500 font-medium tracking-wide uppercase">Artisan à Saint-Étienne</p>
+                    </div>
+                </div>
+                
+                <!-- CTA Desktop & Mobile -->
+                <div class="flex items-center">
+                    <a href="tel:0624617737" class="group relative inline-flex items-center justify-center px-6 py-3 font-semibold text-white transition-all duration-200 bg-gradient-to-r from-accent-500 to-accent-600 rounded-full hover:shadow-lg hover:scale-105 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-accent-600">
+                        <i class="fa-solid fa-phone mr-2 animate-pulse"></i>
+                        <span class="hidden sm:inline">06 24 61 77 37</span>
+                        <span class="sm:hidden">Appeler</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden flex items-center min-h-[90vh]">
+        <!-- Background Image with Overlay -->
+        <div class="absolute inset-0 z-0">
+            <img src="https://loremflickr.com/1920/1080/painter,plasterer" alt="Artisan peintre plâtrier au travail à Saint-Étienne" class="w-full h-full object-cover" />
+            <div class="absolute inset-0 bg-slate-900/75 mix-blend-multiply"></div>
+            <!-- Gradient Overlay for readability -->
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent"></div>
+        </div>
+
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <!-- Trust Badge -->
+            <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-white mb-8 shadow-sm">
+                <div class="flex text-yellow-400 text-sm">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <span class="text-sm font-medium tracking-wide">Noté 4.9/5 par nos clients à Saint-Étienne</span>
+            </div>
+
+            <!-- Headlines -->
+            <h2 class="text-4xl md:text-5xl lg:text-6xl font-display font-extrabold text-white tracking-tight mb-6 leading-tight drop-shadow-lg">
+                Votre intérieur mérite des <span class="text-transparent bg-clip-text bg-gradient-to-r from-accent-500 to-yellow-300">finitions irréprochables.</span>
+            </h2>
+            
+            <p class="mt-4 max-w-3xl mx-auto text-lg md:text-xl text-slate-200 font-light mb-10 drop-shadow">
+                Murs fissurés ? Peintures ternes ou démodées ? Ne laissez pas des murs abîmés gâcher votre espace. <br class="hidden md:block">
+                <strong>Gek plâtrerie peinture</strong>, votre artisan de confiance à Saint-Étienne, transforme et rénove vos pièces avec précision et sérieux.
+            </p>
+
+            <!-- Actions -->
+            <div class="flex flex-col sm:flex-row gap-4 justify-center items-center mt-8">
+                <a href="tel:0624617737" class="w-full sm:w-auto px-8 py-4 text-lg font-bold text-white bg-gradient-to-r from-accent-500 to-accent-600 rounded-full shadow-xl hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 flex items-center justify-center gap-3">
+                    <i class="fa-solid fa-phone-volume"></i>
+                    Demander un devis gratuit
+                </a>
+                <a href="#services" class="w-full sm:w-auto px-8 py-4 text-lg font-medium text-white bg-white/20 hover:bg-white/30 backdrop-blur-sm rounded-full border border-white/30 transition-all duration-300 flex items-center justify-center gap-2">
+                    Découvrir nos services
+                    <i class="fa-solid fa-arrow-down ml-1"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem / Agitation / Solution (Copywriting Section) -->
+    <section class="py-16 bg-white border-b border-slate-100">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl font-display font-bold text-slate-900 mb-6">Ne laissez pas vos travaux de rénovation au hasard</h2>
+            <p class="text-lg text-slate-600 leading-relaxed mb-6">
+                Un mur mal préparé, des joints visibles ou une peinture qui s'écaille peuvent ruiner l'esthétique de votre maison. Trouver un artisan <strong>fiable, ponctuel et minutieux</strong> est souvent un vrai casse-tête.
+            </p>
+            <p class="text-lg text-slate-800 font-medium bg-primary-50 p-6 rounded-2xl border border-primary-100 inline-block shadow-sm">
+                La solution ? <span class="text-primary-800 font-bold">Gek plâtrerie peinture</span>. Basés au cœur de Saint-Étienne, nous garantissons un <strong>travail nickel et irréprochable</strong>, salué par 100% de nos clients. Nous prenons en charge vos murs du placo jusqu'à la dernière couche de peinture.
+            </p>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-primary-600 font-bold tracking-wider uppercase text-sm">Nos Compétences</span>
+                <h2 class="mt-2 text-3xl font-display font-extrabold text-slate-900 sm:text-4xl">Nos Services à Saint-Étienne</h2>
+                <p class="mt-4 text-lg text-slate-600">De la préparation des supports aux finitions décoratives, nous maîtrisons chaque étape pour un résultat parfait.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <div class="group bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden border border-slate-100">
+                    <div class="h-56 overflow-hidden relative">
+                        <img src="https://loremflickr.com/800/600/plasterer" alt="Travaux de plâtrerie" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-80"></div>
+                        <i class="fa-solid fa-trowel text-3xl text-white absolute bottom-4 left-4 drop-shadow-md"></i>
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-xl font-display font-bold text-slate-900 mb-3">Plâtrerie & Pose de Placo</h3>
+                        <p class="text-slate-600 mb-6 leading-relaxed">Création de cloisons, pose de plaques de plâtre, faux plafonds et réalisation de joints parfaits pour des murs lisses et prêts à peindre.</p>
+                        <a href="tel:0624617737" class="text-primary-600 font-semibold inline-flex items-center group-hover:text-primary-800 transition-colors">
+                            En savoir plus <i class="fa-solid fa-arrow-right ml-2 transform group-hover:translate-x-1 transition-transform"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="group bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden border border-slate-100">
+                    <div class="h-56 overflow-hidden relative">
+                        <img src="https://loremflickr.com/800/600/painter" alt="Peinture intérieure" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-80"></div>
+                        <i class="fa-solid fa-paint-roller text-3xl text-white absolute bottom-4 left-4 drop-shadow-md"></i>
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-xl font-display font-bold text-slate-900 mb-3">Peinture Intérieure</h3>
+                        <p class="text-slate-600 mb-6 leading-relaxed">Redonnez vie à vos espaces avec des peintures de haute qualité. Application minutieuse, sans traces, pour un rendu impeccable et durable.</p>
+                        <a href="tel:0624617737" class="text-primary-600 font-semibold inline-flex items-center group-hover:text-primary-800 transition-colors">
+                            En savoir plus <i class="fa-solid fa-arrow-right ml-2 transform group-hover:translate-x-1 transition-transform"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="group bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden border border-slate-100">
+                    <div class="h-56 overflow-hidden relative">
+                        <img src="https://loremflickr.com/800/600/renovation" alt="Rénovation et finitions" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-80"></div>
+                        <i class="fa-solid fa-house-chimney text-3xl text-white absolute bottom-4 left-4 drop-shadow-md"></i>
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-xl font-display font-bold text-slate-900 mb-3">Rénovation & Finitions</h3>
+                        <p class="text-slate-600 mb-6 leading-relaxed">Rénovation complète de vos murs abîmés, enduisage, lissage et finitions décoratives. Un service clé en main pour valoriser votre bien.</p>
+                        <a href="tel:0624617737" class="text-primary-600 font-semibold inline-flex items-center group-hover:text-primary-800 transition-colors">
+                            En savoir plus <i class="fa-solid fa-arrow-right ml-2 transform group-hover:translate-x-1 transition-transform"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pourquoi Nous Choisir -->
+    <section class="py-20 bg-primary-900 text-white relative overflow-hidden">
+        <!-- Decoration background -->
+        <div class="absolute top-0 right-0 -mr-20 -mt-20 w-64 h-64 rounded-full bg-primary-800 blur-3xl opacity-50"></div>
+        <div class="absolute bottom-0 left-0 -ml-20 -mb-20 w-80 h-80 rounded-full bg-accent-600 blur-3xl opacity-20"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-display font-extrabold sm:text-4xl mb-4">Pourquoi choisir Gek plâtrerie peinture ?</h2>
+                <p class="text-primary-100 text-lg max-w-2xl mx-auto">Un artisan local stéphanois engagé pour votre satisfaction totale.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                <div class="flex flex-col items-center text-center p-6 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-sm">
+                    <div class="w-16 h-16 rounded-full bg-accent-500/20 text-accent-500 flex items-center justify-center text-2xl mb-6 shadow-inner">
+                        <i class="fa-solid fa-medal"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Qualité Irréprochable</h3>
+                    <p class="text-primary-100">Nos clients soulignent unanimement notre « travail nickel » et notre grand professionnalisme sur chaque chantier.</p>
+                </div>
+                
+                <div class="flex flex-col items-center text-center p-6 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-sm">
+                    <div class="w-16 h-16 rounded-full bg-accent-500/20 text-accent-500 flex items-center justify-center text-2xl mb-6 shadow-inner">
+                        <i class="fa-solid fa-clipboard-check"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Sérieux et à l'écoute</h3>
+                    <p class="text-primary-100">Nous respectons vos envies, votre budget et les délais convenus. Une communication transparente de A à Z.</p>
+                </div>
+
+                <div class="flex flex-col items-center text-center p-6 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-sm">
+                    <div class="w-16 h-16 rounded-full bg-accent-500/20 text-accent-500 flex items-center justify-center text-2xl mb-6 shadow-inner">
+                        <i class="fa-solid fa-file-invoice"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Devis Gratuit & Rapide</h3>
+                    <p class="text-primary-100">Pas de mauvaises surprises. Nous nous déplaçons gratuitement sur Saint-Étienne et alentours pour évaluer votre projet.</p>
+                </div>
+            </div>
+            
+            <div class="mt-16 text-center">
+                <a href="tel:0624617737" class="inline-flex items-center justify-center px-8 py-4 font-bold text-slate-900 bg-white rounded-full shadow-lg hover:bg-slate-50 hover:scale-105 transition-all duration-200">
+                    <i class="fa-solid fa-calendar-check mr-2 text-primary-600"></i>
+                    Réserver mon intervention
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Avis Clients -->
+    <section class="py-20 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-12 gap-6">
+                <div class="max-w-2xl">
+                    <div class="flex items-center gap-2 mb-2">
+                        <i class="fa-brands fa-google text-2xl text-blue-500"></i>
+                        <span class="text-slate-600 font-semibold tracking-wide uppercase text-sm">Avis Vérifiés</span>
+                    </div>
+                    <h2 class="text-3xl font-display font-extrabold text-slate-900 sm:text-4xl">Ils nous ont fait confiance</h2>
+                </div>
+                <div class="text-right flex-shrink-0">
+                    <div class="text-4xl font-display font-black text-slate-900">4.9 <span class="text-2xl text-slate-400">/5</span></div>
+                    <div class="flex text-yellow-400 text-lg mt-1">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-sm text-slate-500 mt-1">Basé sur 10 avis Google</p>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Review 1 -->
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100 flex flex-col h-full hover:shadow-md transition-shadow">
+                    <div class="flex items-center gap-4 mb-4">
+                        <img src="https://lh3.googleusercontent.com/a/ACg8ocK0kpJF03CXxPuq5lRuiCoBzw-_8G6DvPl8p9UCgmlfYZtQDg=s128-c0x00000000-cc-rp-mo" alt="Samuel Weteto" class="w-12 h-12 rounded-full object-cover bg-slate-100">
+                        <div>
+                            <h4 class="font-bold text-slate-900 text-sm">Samuel Weteto</h4>
+                            <div class="flex text-yellow-400 text-xs">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-slate-600 text-sm italic flex-grow">"Travail nickel irréprochable je vous conseil ses services !!!!!"</p>
+                </div>
+
+                <!-- Review 2 -->
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100 flex flex-col h-full hover:shadow-md transition-shadow">
+                    <div class="flex items-center gap-4 mb-4">
+                        <img src="https://lh3.googleusercontent.com/a-/ALV-UjWhqPmz2em4YfuuXgi4bC_P5woRPo0dsFzYVp_NZakXC-lr239f=s128-c0x00000000-cc-rp-mo" alt="Trinité Collectif" class="w-12 h-12 rounded-full object-cover bg-slate-100">
+                        <div>
+                            <h4 class="font-bold text-slate-900 text-sm">Trinité Collectif</h4>
+                            <div class="flex text-yellow-400 text-xs">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-slate-600 text-sm italic flex-grow">"Très sérieux et professionnel, je recommande à 100%"</p>
+                </div>
+
+                <!-- Review 3 -->
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100 flex flex-col h-full hover:shadow-md transition-shadow">
+                    <div class="flex items-center gap-4 mb-4">
+                        <img src="https://lh3.googleusercontent.com/a/ACg8ocL9sGpHxcxWR8E9N75FNHlHyfSy1smHdU5KCYuBHKAupQlL1w=s128-c0x00000000-cc-rp-mo" alt="Lidjo Buanga" class="w-12 h-12 rounded-full object-cover bg-slate-100">
+                        <div>
+                            <h4 class="font-bold text-slate-900 text-sm">Lidjo Buanga</h4>
+                            <div class="flex text-yellow-400 text-xs">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-slate-600 text-sm italic flex-grow">"N'hésitez pas de contacter Gek plâtrerie peinture, vous ne serez pas déçu 👍"</p>
+                </div>
+
+                <!-- Review 4 -->
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100 flex flex-col h-full hover:shadow-md transition-shadow">
+                    <div class="flex items-center gap-4 mb-4">
+                        <img src="https://lh3.googleusercontent.com/a/ACg8ocLeUo4bQpPv-UiTyDlhgDhSBJJ66K3ZIkTWhHB6dTnhNfE3og=s128-c0x00000000-cc-rp-mo" alt="Prince Gbakwe dena" class="w-12 h-12 rounded-full object-cover bg-slate-100">
+                        <div>
+                            <h4 class="font-bold text-slate-900 text-sm">Prince Gbakwe dena</h4>
+                            <div class="flex text-yellow-400 text-xs">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star text-slate-300"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-slate-600 text-sm italic flex-grow">"Sérieux et a l'écoute ! Top"</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bottom CTA -->
+    <section class="py-16 bg-white relative">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-gradient-to-br from-primary-800 to-primary-900 rounded-3xl p-10 md:p-16 text-center shadow-2xl relative overflow-hidden">
+                <!-- Background decoration -->
+                <div class="absolute top-0 right-0 w-64 h-64 bg-white/5 rounded-full blur-2xl transform translate-x-1/2 -translate-y-1/2"></div>
+                
+                <h2 class="text-3xl md:text-4xl font-display font-bold text-white mb-6 relative z-10">Prêt à transformer votre intérieur ?</h2>
+                <p class="text-primary-100 text-lg mb-10 max-w-2xl mx-auto relative z-10">Ne perdez plus de temps à chercher. Appelez-nous dès maintenant pour discuter de votre projet de plâtrerie ou de peinture à Saint-Étienne et obtenez votre devis gratuit.</p>
+                
+                <a href="tel:0624617737" class="relative z-10 inline-flex items-center justify-center px-8 py-4 text-xl font-bold text-white bg-accent-500 rounded-full shadow-[0_0_20px_rgba(245,158,11,0.4)] hover:bg-accent-600 hover:scale-105 transition-all duration-300">
+                    <i class="fa-solid fa-phone fa-shake mr-3"></i>
+                    06 24 61 77 37
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-slate-300 pt-16 pb-8 border-t-4 border-accent-500">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
+                
+                <!-- Infos Entreprise -->
+                <div>
+                    <div class="flex items-center gap-3 mb-6 text-white">
+                        <div class="w-10 h-10 rounded-full bg-primary-600 flex items-center justify-center text-xl">
+                            <i class="fa-solid fa-paint-roller"></i>
+                        </div>
+                        <h3 class="font-display font-bold text-2xl">Gek plâtrerie peinture</h3>
+                    </div>
+                    <p class="text-slate-400 leading-relaxed mb-6">
+                        Votre artisan peintre et plâtrier expert à Saint-Étienne. Un travail soigné, des finitions parfaites et un professionnalisme reconnu par tous nos clients.
+                    </p>
+                    <div class="flex items-center gap-2">
+                        <span class="text-yellow-400"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span>
+                        <span class="text-white font-medium">4.9/5</span>
+                        <span class="text-slate-500 text-sm">(10 avis Google)</span>
+                    </div>
+                </div>
+
+                <!-- Contact -->
+                <div>
+                    <h4 class="text-white font-bold text-lg mb-6 uppercase tracking-wider">Contact & Accès</h4>
+                    <ul class="space-y-4">
+                        <li class="flex items-start gap-4">
+                            <i class="fa-solid fa-location-dot mt-1 text-accent-500 text-xl"></i>
+                            <span>7 Rue Edmond Charpentier<br>42000 Saint-Étienne<br>France</span>
+                        </li>
+                        <li class="flex items-center gap-4">
+                            <i class="fa-solid fa-phone text-accent-500 text-xl"></i>
+                            <a href="tel:0624617737" class="text-white text-lg font-medium hover:text-accent-500 transition-colors">06 24 61 77 37</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Horaires -->
+                <div>
+                    <h4 class="text-white font-bold text-lg mb-6 uppercase tracking-wider">Horaires d'ouverture</h4>
+                    <ul class="space-y-2 bg-slate-800/50 p-6 rounded-xl border border-slate-800">
+                        <li class="flex justify-between items-center border-b border-slate-700 pb-2">
+                            <span>Lundi</span>
+                            <span class="text-white">07:30 – 16:30</span>
+                        </li>
+                        <li class="flex justify-between items-center border-b border-slate-700 pb-2 pt-2">
+                            <span>Mardi</span>
+                            <span class="text-white">07:30 – 16:30</span>
+                        </li>
+                        <li class="flex justify-between items-center border-b border-slate-700 pb-2 pt-2">
+                            <span>Mercredi</span>
+                            <span class="text-white">07:30 – 16:30</span>
+                        </li>
+                        <li class="flex justify-between items-center border-b border-slate-700 pb-2 pt-2">
+                            <span>Jeudi</span>
+                            <span class="text-white">07:30 – 16:30</span>
+                        </li>
+                        <li class="flex justify-between items-center border-b border-slate-700 pb-2 pt-2">
+                            <span>Vendredi</span>
+                            <span class="text-white">07:30 – 16:30</span>
+                        </li>
+                        <li class="flex justify-between items-center text-slate-500 pt-2">
+                            <span>Samedi - Dimanche</span>
+                            <span>Fermé</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-slate-800 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-slate-500">
+                <p>&copy; <script>document.write(new Date().getFullYear())</script> Gek plâtrerie peinture. Tous droits réservés.</p>
+                <p class="mt-2 md:mt-0">Artisan Plâtrier Peintre à Saint-Étienne (42000)</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
